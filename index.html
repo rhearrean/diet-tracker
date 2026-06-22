@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Diet Tracker</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="style.css" />
+  <meta name="theme-color" content="#111827" />
+</head>
+<body>
+  <main class="app">
+    <section class="card">
+      <div class="header">
+        <div>
+          <p class="eyebrow">Daily Log</p>
+          <h1>Diet Tracker</h1>
+        </div>
+        <div class="date-pill" id="todayLabel"></div>
+      </div>
+
+      <form id="logForm">
+        <label>Weight
+          <input id="weight" type="number" inputmode="decimal" step="0.1" placeholder="157.0" />
+        </label>
+
+        <label>Calories
+          <input id="calories" type="number" inputmode="numeric" placeholder="2200" />
+        </label>
+
+        <label>Protein (g)
+          <input id="protein" type="number" inputmode="numeric" placeholder="150" />
+        </label>
+
+        <label>Steps
+          <input id="steps" type="number" inputmode="numeric" placeholder="8500" />
+        </label>
+
+        <label>Workout
+          <select id="workout">
+            <option value="">Select workout</option>
+            <option>Abs</option>
+            <option>Abs + Push-Ups</option>
+            <option>Walk</option>
+            <option>Abs + Walk</option>
+            <option>Abs + Push-Ups + Walk</option>
+            <option>Rest</option>
+          </select>
+        </label>
+
+        <label>Notes
+          <textarea id="notes" rows="3" placeholder="Any hunger, energy, meal, or workout notes..."></textarea>
+        </label>
+
+        <button type="submit" id="saveButton">Save Today’s Log</button>
+        <p id="status"></p>
+      </form>
+    </section>
+
+    <section class="hint">
+      <p>Google Sheet columns should be:</p>
+      <code>Date | Weight | Calories | Protein (g) | Steps | Workout | Notes</code>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
