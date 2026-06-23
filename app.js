@@ -40,7 +40,8 @@ form.addEventListener("submit", async (event) => {
 
   const payload = {
     secret: API_SECRET,
-    date: getLocalDateString(),
+    // date: getLocalDateString(),
+    date: document.getElementById("date").value || getLocalDateString(),
     weight: document.getElementById("weight").value,
     calories: document.getElementById("calories").value,
     protein: document.getElementById("protein").value,
