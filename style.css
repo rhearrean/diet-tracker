@@ -137,3 +137,12 @@ code {
   color: #d1d5db;
   overflow-x: auto;
 }
+
+input[type="date"] {
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  appearance: none;
+  -webkit-appearance: none;
+}
