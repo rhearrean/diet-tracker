@@ -1,5 +1,5 @@
-const SCRIPT_URL = "PASTE_YOUR_GOOGLE_APPS_SCRIPT_WEB_APP_URL_HERE";
-const API_SECRET = "PASTE_YOUR_SECRET_KEY_HERE";
+const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxrt_kCz7PLVLou5ypsbMULPCI_AU3ZDONZ--H_91XIcSN_dEXFTA0DHkvy1xTNcBul/exec";
+const API_SECRET = "legos";
 
 const form = document.getElementById("logForm");
 const statusEl = document.getElementById("status");
