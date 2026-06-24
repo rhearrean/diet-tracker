@@ -20,12 +20,12 @@
       </div>
 
       <form id="logForm">
-        <label>Weight
-          <input id="weight" type="number" inputmode="decimal" step="0.1" placeholder="157.0" />
-        </label>
-
         <label>Date
           <input id="date" type="date" />
+        </label>
+
+        <label>Weight
+          <input id="weight" type="number" inputmode="decimal" step="0.1" placeholder="157.0" />
         </label>
 
         <label>Calories
@@ -56,14 +56,9 @@
           <textarea id="notes" rows="3" placeholder="Any hunger, energy, meal, or workout notes..."></textarea>
         </label>
 
-        <button type="submit" id="saveButton">Save Today’s Log</button>
+        <button type="submit" id="saveButton">Save Log</button>
         <p id="status"></p>
       </form>
-    </section>
-
-    <section class="hint">
-      <p>Google Sheet columns should be:</p>
-      <code>Date | Weight | Calories | Protein (g) | Steps | Workout | Notes</code>
     </section>
   </main>
 

@@ -77,7 +77,9 @@ label {
   min-width: 0;
 }
 
-input, select, textarea {
+input,
+select,
+textarea {
   width: 100%;
   max-width: 100%;
   min-width: 0;
@@ -91,9 +93,37 @@ input, select, textarea {
   outline: none;
 }
 
+input[type="date"] {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  height: 48px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  font-size: 16px;
+  border-radius: 14px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+input[type="date"]::-webkit-date-and-time-value {
+  text-align: left;
+  width: 100%;
+  min-width: 0;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  margin: 0;
+  padding: 0;
+}
+
 textarea { resize: vertical; }
 
-input:focus, select:focus, textarea:focus {
+input:focus,
+select:focus,
+textarea:focus {
   border-color: var(--accent);
   box-shadow: 0 0 0 3px rgba(167, 199, 160, 0.18);
 }
@@ -120,35 +150,3 @@ button:disabled { opacity: 0.65; }
 
 #status.success { color: var(--accent); }
 #status.error { color: var(--danger); }
-
-.hint {
-  margin-top: 14px;
-  color: var(--muted);
-  font-size: 13px;
-  line-height: 1.45;
-}
-
-code {
-  display: block;
-  margin-top: 6px;
-  padding: 10px;
-  border-radius: 12px;
-  background: rgba(0,0,0,0.22);
-  color: #d1d5db;
-  overflow-x: auto;
-}
-
-input[type="date"] {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  min-width: 0;
-  height: 48px;
-  line-height: 1.2;
-  box-sizing: border-box;
-  padding: 13px 14px;
-  font-size: 16px;
-  border-radius: 14px;
-  -webkit-appearance: none;
-  appearance: none;
-}
