@@ -2,7 +2,7 @@
 // Supports saving, preserving existing values on blank fields, hidden Settings sheet, and loading row data by date.
 
 const SETTINGS_SHEET_NAME = "Settings";
-const API_SECRET = "PASTE_YOUR_SECRET_KEY_HERE";
+const API_SECRET = "legos";
 
 function getSetting(key, fallback) {
   const settingsSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SETTINGS_SHEET_NAME);
