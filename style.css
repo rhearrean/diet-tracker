@@ -139,7 +139,16 @@ code {
 }
 
 input[type="date"] {
+  display: block;
   width: 100%;
   max-width: 100%;
-  display: block;
+  min-width: 0;
+  height: 48px;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 13px 14px;
+  font-size: 16px;
+  border-radius: 14px;
+  -webkit-appearance: none;
+  appearance: none;
 }
