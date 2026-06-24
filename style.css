@@ -138,8 +138,8 @@ code {
   overflow-x: auto;
 }
 
-label input[type="date"] {
+input[type="date"] {
   width: 100%;
+  max-width: 100%;
   display: block;
-  box-sizing: border-box;
 }
